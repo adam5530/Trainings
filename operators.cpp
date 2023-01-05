@@ -34,6 +34,12 @@ public:
         y += other.y;
         return *this;
     }
+    Calc operator*(const Calc& other)
+    {
+        x *= other.x;
+        y *= other.y;
+        return *this;
+    }
 };
 
 int main(int argc, char **argv)
