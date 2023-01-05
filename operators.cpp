@@ -38,6 +38,11 @@ public:
     {
         x -= other.x;
         y -= other.y;
+    }
+    Calc operator*(const Calc& other)
+    {
+        x *= other.x;
+        y *= other.y;
         return *this;
     }
 };
