@@ -65,5 +65,8 @@ int main(int argc, char **argv)
 
     cl4 = cl4 - cl2;
     cout << cl4.getVals().first << " " << cl4.getVals().second << endl;
+
+    cl4 = cl4 * cl2;
+    cout << cl4.getVals().first << " " << cl4.getVals().second << endl;
     return 0;
 }
