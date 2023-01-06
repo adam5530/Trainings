@@ -30,18 +30,21 @@ public:
     }
     Calc operator+(const Calc& other)
     {
+        cout << "Plus operator" << endl;
         x += other.x;
         y += other.y;
         return *this;
     }
     Calc operator-(const Calc& other)
     {
+        cout << "Minus operator" << endl;
         x -= other.x;
         y -= other.y;
         return *this;
     }
     Calc operator*(const Calc& other)
     {
+        cout << "Multiplication operator" << endl;
         x *= other.x;
         y *= other.y;
         return *this;
