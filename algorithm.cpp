@@ -4,7 +4,11 @@
 
 using namespace std;
 
-
+struct Data
+{
+    string msg;
+    int id;
+};
 
 int main(int argc, char **argv)
 {
@@ -29,5 +33,21 @@ int main(int argc, char **argv)
     cout << "Copied odd number: " << endl;
     for(auto elem : odd)
         cout << elem << endl;
+
+    vector<int>data{1, 6, 3, 0};
+    do
+    {
+        next_permutation(data.begin(), data.end());
+        for(auto &elem : data)
+            cout << elem << " ";
+        cout << endl;
+    }while(!is_sorted(data.begin(), data.end()));
+
+    auto isInRange = all_of(data.begin(), data.end(),
+    [](int i)
+    {
+        return (i >= 0 && i < 10);
+    });
+    cout << isInRange << endl;
     return 0;
 }
