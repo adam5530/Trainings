@@ -38,6 +38,7 @@ public:
     {
         x -= other.x;
         y -= other.y;
+        return *this;
     }
     Calc operator*(const Calc& other)
     {
@@ -60,6 +61,9 @@ int main(int argc, char **argv)
 
     Calc cl4;
     cl4 = cl1 + cl2;
+    cout << cl4.getVals().first << " " << cl4.getVals().second << endl;
+
+    cl4 = cl4 - cl2;
     cout << cl4.getVals().first << " " << cl4.getVals().second << endl;
     return 0;
 }
