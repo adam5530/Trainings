@@ -60,7 +60,7 @@ bool validBraces(string word)
 
 int main(int argc, char **argv)
 {
-    string word {"{[]}({[]})[]"};
+    string word {"[(])"};
     cout << validBraces(word) << endl;
     return 0;
 }
